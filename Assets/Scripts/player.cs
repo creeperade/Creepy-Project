@@ -6,10 +6,12 @@ public class player : MonoBehaviour
 {
 
     private Master _Master;
-    private Vector3 _Movement;
+    private Vector3 _Movement = new Vector3();
     private Rigidbody _Rb;
+    private float YRotation = 0f;
 
-    [SerializeField] private float Speed;
+    [SerializeField] private float speed;
+    [SerializeField] private float mouseSensitivity;
 
     // Start is called before the first frame update
     private void Awake()
@@ -19,13 +21,16 @@ public class player : MonoBehaviour
         
 
         _Rb = GetComponent<Rigidbody>();
-        
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
     }
 
 
     private void Move(InputAction.CallbackContext ctx)
     {
-        Vector2 Vec = ctx.ReadValue<Vector2>();
+        Vector2 Vec = ctx.ReadValue<Vector2>().normalized;
         _Movement.x = Vec.x;
         _Movement.z = Vec.y;
         
@@ -33,18 +38,20 @@ public class player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _Rb.position += _Movement * Speed * Time.fixedDeltaTime;
+        
+        _Rb.position += _Movement * speed * Time.fixedDeltaTime;
         
     }
 
     private void Update()
     {
-        Vector2 _mousePos = Mouse.current.position.ReadValue();
+        Vector2 _mousePos = _Master.Player.Look.ReadValue<Vector2>() * mouseSensitivity;
 
+        transform.rotation = Quaternion.Euler(0, _mousePos.x, 0);
 
-        Vector2 move = Camera.main.ScreenToWorldPoint(_mousePos);
-
-        transform.Rotate(move, Space.World);
+        Camera.main.transform.Rotate(_mousePos.y, 0,0);
+        Debug.Log(_mousePos);
+      
 
     }
 
