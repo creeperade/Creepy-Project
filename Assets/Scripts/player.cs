@@ -43,14 +43,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        Vector2 mousePos = _master.Player.Look.ReadValue<Vector2>() * mouseSensitivity;
-
-        transform.rotation = Quaternion.Euler(0, mousePos.x, 0);
-
-        if (Camera.main != null) Camera.main.transform.Rotate(mousePos.y, 0, 0);
-        Debug.Log(mousePos);
-      
-
+        
     }
 
     private void OnEnable()
