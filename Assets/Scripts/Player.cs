@@ -9,33 +9,36 @@ public class Player : MonoBehaviour
     private Rigidbody _rb;
     private Master _master;
     private Vector3 _movement;
+    private Vector2 _move;
+    private Transform _camTransform;
 
-    
-    
 
     [SerializeField] private float speed;
-    private Vector2 _move;
 
 
     private void Awake()
     {
+        
+
         _rb = GetComponent<Rigidbody>();
         _master = new Master();
-        _move = _master.Player.Movement.ReadValue<Vector2>();
+        _master.Player.Movement.performed += Move;
+        _camTransform = main!.transform;
 
     }
-    
+    void Move(InputAction.CallbackContext ctx) => _move = ctx.ReadValue<Vector2>();
+
+
+    private void Update()
+    {
+
+        _movement = _camTransform.right * _move.x + _camTransform.forward * _move.y;
+    }
 
     private void FixedUpdate()
     {
         _rb.position += _movement * (speed * Time.fixedDeltaTime);
         
-    }
-
-    private void Update()
-    {
-        Transform camTransform = main.transform;
-        _movement = camTransform.right * move.x + camTransform.forward * move.y;
     }
 
 

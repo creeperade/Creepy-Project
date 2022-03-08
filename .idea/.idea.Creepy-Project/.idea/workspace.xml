@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a0d6ba2-ead7-4ba0-a89f-fd77b089bc5e" name="Changes" comment="trying to add movement, and also finished mouse input">
+    <list default="true" id="7a0d6ba2-ead7-4ba0-a89f-fd77b089bc5e" name="Changes" comment="added movement">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Creepy-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Creepy-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Input/Master.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/Master.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Input/Master.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/Master.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +71,7 @@
       <updated>1646754877578</updated>
       <workItem from="1646754885852" duration="36000" />
       <workItem from="1646759410530" duration="1343000" />
-      <workItem from="1646760853216" duration="3397000" />
+      <workItem from="1646760853216" duration="4138000" />
     </task>
     <task id="LOCAL-00001" summary="simple changes">
       <created>1646760017846</created>
@@ -97,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646762385550</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added movement">
+      <created>1646764297525</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1646764297525</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +126,7 @@
     <MESSAGE value="simple changes" />
     <MESSAGE value="other changes" />
     <MESSAGE value="trying to add movement, and also finished mouse input" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to add movement, and also finished mouse input" />
+    <MESSAGE value="added movement" />
+    <option name="LAST_COMMIT_MESSAGE" value="added movement" />
   </component>
 </project>
