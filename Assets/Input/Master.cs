@@ -32,7 +32,7 @@ public partial class @Master : IInputActionCollection2, IDisposable
                     ""type"": ""PassThrough"",
                     ""id"": ""ca6f3a06-bd9a-42a9-b781-b698e4fb8834"",
                     ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
+                    ""processors"": ""NormalizeVector2"",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 }
@@ -40,7 +40,7 @@ public partial class @Master : IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": ""WASD"",
-                    ""id"": ""dd2609ef-d730-4e78-b35e-3505915269bc"",
+                    ""id"": ""9014cf15-f385-4adc-9373-bd486f9f56e1"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -51,7 +51,7 @@ public partial class @Master : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""7490c581-1e2e-4b47-85ed-2b971f439d1e"",
+                    ""id"": ""d1b55433-a3fb-4c5f-97f6-012b37c787e4"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -62,7 +62,7 @@ public partial class @Master : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""25c280ac-e918-4cf1-ab41-6e1d492dedbf"",
+                    ""id"": ""2491cce5-d670-4770-a037-23994c3cf21a"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -73,7 +73,7 @@ public partial class @Master : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""6168d518-4732-476d-8204-613a6841257a"",
+                    ""id"": ""d2ab0297-417a-4c2d-a412-d1dc2bdf5d0b"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -84,7 +84,7 @@ public partial class @Master : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""190e8861-852b-4fb9-9e23-b38728c7c9a9"",
+                    ""id"": ""481c5a0d-0e2d-41f3-aaf2-4eeaddeebc62"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",

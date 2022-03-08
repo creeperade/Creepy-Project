@@ -1,35 +1,52 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.Camera;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Player : MonoBehaviour
 {
     private Rigidbody _rb;
     private Master _master;
-    private Vector3 _movement = Vector3.forward;
+    private Vector3 _movement;
+
+    
+    
 
     [SerializeField] private float speed;
-    
-    
+    private Vector2 _move;
+
+
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
         _master = new Master();
-        _master.Player.Movement.performed += ctx => Move(ctx);
+        _move = _master.Player.Movement.ReadValue<Vector2>();
 
     }
-
-    private void Move(InputAction.CallbackContext ctx)
-    {
-        Vector2 move = ctx.ReadValue<Vector2>();
-        _movement.x = move.x;
-        _movement.z = move.y;
-    }
+    
 
     private void FixedUpdate()
     {
-        _rb.velocity = _movement * speed * Time.fixedDeltaTime;
+        _rb.position += _movement * (speed * Time.fixedDeltaTime);
+        
+    }
+
+    private void Update()
+    {
+        Transform camTransform = main.transform;
+        _movement = camTransform.right * move.x + camTransform.forward * move.y;
+    }
+
+
+    private void OnEnable()
+    {
+        _master.Enable();
+    }
+
+    private void OnDisable()
+    {
+        _master.Disable();
     }
 }
 

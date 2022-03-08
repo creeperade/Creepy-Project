@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a0d6ba2-ead7-4ba0-a89f-fd77b089bc5e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs.meta" afterDir="false" />
+    <list default="true" id="7a0d6ba2-ead7-4ba0-a89f-fd77b089bc5e" name="Changes" comment="trying to add movement, and also finished mouse input">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Creepy-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Creepy-Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Input/Master.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/Master.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Input/Master.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/Master.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/player.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/player.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +20,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/ziyad/Desktop/Code/Creepy-Project/Assets/Input/Master.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="rider.run.widget.enabled.cache" value="false" />
-    <property name="settings.editor.selected.configurable" value="RiderCSharpLiveTemplatesSettingsId" />
+    <property name="settings.editor.selected.configurable" value="preferences.build.unityPlugin" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -75,7 +74,7 @@
       <updated>1646754877578</updated>
       <workItem from="1646754885852" duration="36000" />
       <workItem from="1646759410530" duration="1343000" />
-      <workItem from="1646760853216" duration="1344000" />
+      <workItem from="1646760853216" duration="3397000" />
     </task>
     <task id="LOCAL-00001" summary="simple changes">
       <created>1646760017846</created>
@@ -91,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646760425685</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="trying to add movement, and also finished mouse input">
+      <created>1646762385550</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1646762385550</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,38 +121,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="simple changes" />
     <MESSAGE value="other changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="other changes" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Player.cs</url>
-          <line>31</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" initialLine="31" containingFunctionPresentation="method 'FixedUpdate'">
-            <startOffsets>
-              <option value="677" />
-            </startOffsets>
-            <endOffsets>
-              <option value="732" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Player.cs</url>
-          <line>24</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" initialLine="24" containingFunctionPresentation="method 'Move'">
-            <startOffsets>
-              <option value="524" />
-            </startOffsets>
-            <endOffsets>
-              <option value="564" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="trying to add movement, and also finished mouse input" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to add movement, and also finished mouse input" />
   </component>
 </project>
