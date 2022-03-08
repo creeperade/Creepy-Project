@@ -2,13 +2,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
-public class player : MonoBehaviour
+public class Player : MonoBehaviour
 {
 
-    private Master _Master;
-    private Vector3 _Movement = new Vector3();
-    private Rigidbody _Rb;
-    private float YRotation = 0f;
+    private Master _master;
+    private Vector3 _movement;
+    private Rigidbody _rb;
 
     [SerializeField] private float speed;
     [SerializeField] private float mouseSensitivity;
@@ -16,13 +15,12 @@ public class player : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        _Master = new Master();
-        _Master.Player.Movement.performed += ctx => Move(ctx);
+        _master = new Master();
+        _master.Player.Movement.performed += ctx => Move(ctx);
         
 
-        _Rb = GetComponent<Rigidbody>();
-
-        Cursor.lockState = CursorLockMode.Locked;
+        _rb = GetComponent<Rigidbody>();
+            
         Cursor.visible = false;
 
     }
@@ -30,37 +28,37 @@ public class player : MonoBehaviour
 
     private void Move(InputAction.CallbackContext ctx)
     {
-        Vector2 Vec = ctx.ReadValue<Vector2>().normalized;
-        _Movement.x = Vec.x;
-        _Movement.z = Vec.y;
+        Vector2 vec = ctx.ReadValue<Vector2>().normalized;
+        _movement.x = vec.x;
+        _movement.z = vec.y;
         
     }
 
     private void FixedUpdate()
     {
         
-        _Rb.position += _Movement * speed * Time.fixedDeltaTime;
+        _rb.position += _movement * speed * Time.fixedDeltaTime;
         
     }
 
     private void Update()
     {
-        Vector2 _mousePos = _Master.Player.Look.ReadValue<Vector2>() * mouseSensitivity;
+        Vector2 mousePos = _master.Player.Look.ReadValue<Vector2>() * mouseSensitivity;
 
-        transform.rotation = Quaternion.Euler(0, _mousePos.x, 0);
+        transform.rotation = Quaternion.Euler(0, mousePos.x, 0);
 
-        Camera.main.transform.Rotate(_mousePos.y, 0,0);
-        Debug.Log(_mousePos);
+        if (Camera.main != null) Camera.main.transform.Rotate(mousePos.y, 0, 0);
+        Debug.Log(mousePos);
       
 
     }
 
     private void OnEnable()
     {
-        _Master.Enable();
+        _master.Enable();
     }
     private void OnDisable()
     {
-        _Master.Disable();
+        _master.Disable();
     }
 }
