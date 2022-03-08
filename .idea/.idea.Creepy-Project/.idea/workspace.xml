@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a0d6ba2-ead7-4ba0-a89f-fd77b089bc5e" name="Changes" comment="added movement">
+    <list default="true" id="7a0d6ba2-ead7-4ba0-a89f-fd77b089bc5e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Creepy-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Creepy-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +18,11 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Input/Master.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/ziyad/Desktop/Code/Creepy-Project/Assets/Input/Master.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/ziyad/Desktop/Code/Creepy-Project/Assets/Scripts/Player.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -71,7 +74,7 @@
       <updated>1646754877578</updated>
       <workItem from="1646754885852" duration="36000" />
       <workItem from="1646759410530" duration="1343000" />
-      <workItem from="1646760853216" duration="4138000" />
+      <workItem from="1646760853216" duration="4613000" />
     </task>
     <task id="LOCAL-00001" summary="simple changes">
       <created>1646760017846</created>
@@ -101,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646764297525</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="completed the movement and mouse directional input">
+      <created>1646765054677</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1646765054677</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +137,7 @@
     <MESSAGE value="other changes" />
     <MESSAGE value="trying to add movement, and also finished mouse input" />
     <MESSAGE value="added movement" />
-    <option name="LAST_COMMIT_MESSAGE" value="added movement" />
+    <MESSAGE value="completed the movement and mouse directional input" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed the movement and mouse directional input" />
   </component>
 </project>
