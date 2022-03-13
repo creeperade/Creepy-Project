@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7a0d6ba2-ead7-4ba0-a89f-fd77b089bc5e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Creepy-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Creepy-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Input/Master.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/Master.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Input/Master.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/Master.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
     </list>
@@ -41,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="rider.run.widget.enabled.cache" value="false" />
-    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+    <property name="settings.editor.selected.configurable" value="RiderUnityLiveTemplatesSettings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -78,6 +76,8 @@
       <workItem from="1646759410530" duration="1343000" />
       <workItem from="1646760853216" duration="4613000" />
       <workItem from="1646848737543" duration="3328000" />
+      <workItem from="1647119805939" duration="1828000" />
+      <workItem from="1647170625807" duration="747000" />
     </task>
     <task id="LOCAL-00001" summary="simple changes">
       <created>1646760017846</created>

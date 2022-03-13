@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 using static UnityEngine.Camera;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -13,9 +12,10 @@ public class Player : MonoBehaviour
     private Vector2 _move;
     private Transform _camTransform;
     private float _speed;
-
+    
     [SerializeField] private float moveSpeed;
     [SerializeField] private float sprintMultiplier;
+        
 
 
     private void Awake()
@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
         _master = new Master();
         _master.Player.Movement.performed += Move;
+       
         _master.Player.Run.performed += (ctx => _speed *= sprintMultiplier);
         _master.Player.Run.canceled += (ctx => _speed /= sprintMultiplier);
         _camTransform = main!.transform;
@@ -39,15 +40,14 @@ public class Player : MonoBehaviour
         
         _move = ctx.ReadValue<Vector2>();
         
+
     }
 
 
     private void Update()
     {
         
-        
-        
-         _movement = (_camTransform.right * _move.x + _camTransform.forward * _move.y) * _speed;
+        _movement = (_camTransform.right * _move.x + _camTransform.forward * _move.y) * _speed;
 
 
     }
@@ -61,15 +61,16 @@ public class Player : MonoBehaviour
     
 
 
+    #region Input enable and disable
     private void OnEnable()
     {
         _master.Enable();
     }
-
     private void OnDisable()
     {
         _master.Disable();
     }
+    #endregion
 }
 
 
