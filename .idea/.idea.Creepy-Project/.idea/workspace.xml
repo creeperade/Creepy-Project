@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a0d6ba2-ead7-4ba0-a89f-fd77b089bc5e" name="Changes" comment="">
+    <list default="true" id="7a0d6ba2-ead7-4ba0-a89f-fd77b089bc5e" name="Changes" comment="nothing">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Creepy-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Creepy-Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Input/Master.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/Master.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Input/Master.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/Master.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +27,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Input/Master.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/ziyad/Desktop/Code/Creepy-Project/Assets/Scripts/Player.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -39,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="rider.run.widget.enabled.cache" value="false" />
-    <property name="settings.editor.selected.configurable" value="RiderUnityLiveTemplatesSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.build.unityPlugin" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -77,7 +83,7 @@
       <workItem from="1646760853216" duration="4613000" />
       <workItem from="1646848737543" duration="3328000" />
       <workItem from="1647119805939" duration="1828000" />
-      <workItem from="1647170625807" duration="747000" />
+      <workItem from="1647170625807" duration="5442000" />
     </task>
     <task id="LOCAL-00001" summary="simple changes">
       <created>1646760017846</created>
@@ -114,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646765054677</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="nothing">
+      <created>1647171535264</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647171535264</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +154,8 @@
     <MESSAGE value="trying to add movement, and also finished mouse input" />
     <MESSAGE value="added movement" />
     <MESSAGE value="completed the movement and mouse directional input" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed the movement and mouse directional input" />
+    <MESSAGE value="nothing" />
+    <option name="LAST_COMMIT_MESSAGE" value="nothing" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
